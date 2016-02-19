@@ -33,7 +33,7 @@ public class Main {
     GsonConverterFactory converterFactory = GsonConverterFactory.create(gson);
 
     Retrofit.Builder retrofitBuilder = new Retrofit.Builder();
-    retrofitBuilder.baseUrl(httpsURL).client(client).addConverterFactory(converterFactory).build();
+    retrofitBuilder.baseUrl(httpsURL).client(client).addConverterFactory(converterFactory);
     Retrofit retrofit = retrofitBuilder.build();
     ClusterQuery query = retrofit.create(ClusterQuery.class);
 

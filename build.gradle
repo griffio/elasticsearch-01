@@ -1,4 +1,11 @@
-apply plugin: 'java'
+plugins {
+  id "com.fizzpod.sweeney" version "2.0.0"
+  id "java"
+}
+
+sweeney {
+  enforce 'jdk:[1.8,)'
+}
 
 repositories {
   jcenter()

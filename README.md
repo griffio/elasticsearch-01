@@ -103,6 +103,10 @@ String basicAuth = Credentials.basic("myadmin", "FIXME!");
 String httpsURL = "https://FIXME!";
 ```
 
+Gson is the library dependency we are using to convert the JSON response to Java
+
+> Refer to: https://github.com/google/gson
+
 Second, setup a Gson configuration will match the JSON response naming format to Java camelCase:-
 
 ``` java

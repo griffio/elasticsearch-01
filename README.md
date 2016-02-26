@@ -135,4 +135,8 @@ ClusterQuery query = retrofit.create(ClusterQuery.class);
 Call<ClusterStatus> queryCall = query.getStatus(basicAuth);
 ClusterStatus clusterStatus = queryCall.execute().body();
 ```
-The final resulting ClusterStatus is just a normal instance of that class
+The final resulting ClusterStatus is just a normal instance of that class where fields can be read with the data
+
+``` java
+ String.format("The cluster %s is %s", clusterStatus.clusterName, clusterStatus.status);
+```
